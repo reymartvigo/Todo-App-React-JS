@@ -1,0 +1,338 @@
+@use "variable";
+// dark theme //
+#dark {
+  background-color: variable.$VeryDarkBlue;
+}
+// dark theme //
+
+// light theme //
+#light {
+  background-color: variable.$VeryLightGray;
+  .top-wrapper {
+    background: url(./src/assets/images/bg-mobile-light.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #dark-mode {
+    display: none;
+  }
+
+  #light-mode {
+    display: flex;
+  }
+
+  .task-wrapper {
+    .checkbox {
+      border: 0.5px solid variable.$LightGrayishBlue1;
+    }
+  }
+
+  input,
+  .task-container,
+  .task-filter {
+    color: variable.$VeryDarkDesaturatedBlue;
+    background-color: variable.$VeryLightGray;
+  }
+
+  .task-container {
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(206, 102, 102, 0.15);
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.15);
+
+    .task-holder {
+      border-bottom: 0.5px solid variable.$LightGrayishBlue1;
+
+      .task-check {
+        p {
+          color: variable.$VeryDarkDesaturatedBlue;
+        }
+      }
+    }
+  }
+
+  .items-left {
+    .task-filter-desktop {
+      button {
+        &:hover {
+          color: variable.$VeryDarkBlue;
+        }
+      }
+    }
+  }
+
+  .task-filter {
+    button {
+      &:hover {
+        color: variable.$VeryDarkBlue;
+      }
+    }
+  }
+}
+// light theme //
+
+.todo-wrapper {
+  color: variable.$LightGrayishBlue3;
+  width: 100%;
+  min-height: 100vh;
+
+  .top-wrapper {
+    background: url(./src/assets/images/bg-mobile-dark.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 4rem 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    .toggle-wrapper {
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      button {
+        background: none;
+        outline: none;
+        border: none;
+        cursor: pointer;
+      }
+      h1 {
+        font-weight: 400;
+        letter-spacing: 0.7rem;
+      }
+
+      .toggle-theme {
+        display: flex;
+
+        #light-mode {
+          display: none;
+        }
+      }
+    }
+
+    .input-wrapper {
+      width: 100%;
+      .checkbox {
+        background: none;
+        position: relative;
+        top: -2rem;
+        left: 1rem;
+        width: 1rem;
+        height: 1rem;
+        border: 1px solid variable.$DarkGrayishBlue1;
+        border-radius: 1rem;
+        cursor: pointer;
+      }
+
+      input {
+        color: variable.$DarkGrayishBlue2;
+        border: none;
+        background-color: variable.$VeryDarkDesaturatedBlue;
+        width: 100%;
+        border-radius: 0.8rem;
+        font-size: 1rem;
+        padding: 1rem 2.8rem;
+        outline: none;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .task-wrapper {
+    height: max-content;
+    margin-top: -3.5rem;
+    padding: 0rem 2rem;
+
+    .task-container {
+      background-color: variable.$VeryDarkDesaturatedBlue;
+      border-radius: 0.5rem;
+
+      .else {
+        font-size: 0.8rem;
+        text-align: center;
+        color: variable.$DarkGrayishBlue2;
+        padding: 1rem;
+      }
+      .task-holder {
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        border-bottom: 0.5px solid variable.$VeryDarkGrayishBlue3;
+
+        padding: 1.25rem;
+
+        .task-check {
+          display: flex;
+          gap: 1rem;
+        }
+        .delete-wrapper {
+          button {
+            background: none;
+            border: none;
+            outline: none;
+            cursor: pointer;
+          }
+        }
+
+        p {
+          font-size: 0.8rem;
+          font-weight: 400;
+          color: variable.$DarkGrayishBlue1;
+        }
+
+        .checkbox {
+          width: 1.25rem;
+          height: 1.25rem;
+          border: 0.5px solid variable.$VeryDarkGrayishBlue2;
+          border-radius: 1rem;
+          cursor: pointer;
+        }
+      }
+    }
+    .task-container :last-child {
+      border-bottom: none;
+    }
+
+    .items-left {
+      display: flex;
+      justify-content: space-between;
+      padding: 1.25rem;
+
+      span {
+        font-size: 0.8rem;
+        font-weight: 400;
+        color: variable.$DarkGrayishBlue2;
+      }
+      .clear {
+        cursor: pointer;
+      }
+
+      .task-filter-desktop {
+        display: none;
+        gap: 1rem;
+        margin-left: 2rem;
+
+        button {
+          cursor: pointer;
+          color: variable.$DarkGrayishBlue2;
+          background: none;
+          outline: none;
+          border: none;
+          &:hover {
+            color: variable.$VeryLightGrayishBlue;
+          }
+        }
+      }
+    }
+    .task-filter {
+      background-color: variable.$VeryDarkDesaturatedBlue;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      border-radius: 0.45rem;
+      margin-top: 1rem;
+
+      padding: 1rem;
+      button {
+        cursor: pointer;
+        color: variable.$DarkGrayishBlue2;
+        background: none;
+        outline: none;
+        border: none;
+        &:hover {
+          color: variable.$VeryLightGrayishBlue;
+        }
+      }
+    }
+  }
+  .hint {
+    color: variable.$DarkGrayishBlue2;
+    margin-top: 2rem;
+    text-align: center;
+    padding: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .todo-wrapper {
+    .top-wrapper {
+      padding: 4rem;
+    }
+
+    .task-wrapper {
+      padding: 0rem 4rem;
+
+      .task-container {
+        background-color: variable.$VeryDarkDesaturatedBlue;
+        border-radius: 0.5rem;
+      }
+
+      .items-left {
+        display: flex;
+        justify-content: space-between;
+        padding: 1.25rem;
+
+        span {
+          font-size: 0.8rem;
+          font-weight: 400;
+          color: variable.$DarkGrayishBlue2;
+        }
+        .clear {
+          cursor: pointer;
+        }
+
+        .task-filter-desktop {
+          display: flex;
+        }
+      }
+      .task-filter {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #light {
+    .top-wrapper {
+      background: url(./src/assets/images/bg-desktop-light.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  .todo-wrapper {
+    .top-wrapper {
+      background: url(./src/assets/images/bg-desktop-dark.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      align-items: center;
+      padding: 4rem;
+
+      .toggle-wrapper {
+        width: 40rem;
+      }
+
+      .input-wrapper {
+        width: 40rem;
+      }
+    }
+
+    .task-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .task-container {
+        width: 40rem;
+      }
+
+      .items-left {
+        .task-filter-desktop {
+          display: flex;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,286 @@
+#dark {
+  background-color: hsl(235, 21%, 11%);
+}
+
+#light {
+  background-color: hsl(0, 0%, 98%);
+}
+#light .top-wrapper {
+  background: url(./src/assets/images/bg-mobile-light.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#light #dark-mode {
+  display: none;
+}
+#light #light-mode {
+  display: flex;
+}
+#light .task-wrapper .checkbox {
+  border: 0.5px solid hsl(233, 11%, 84%);
+}
+#light input,
+#light .task-container,
+#light .task-filter {
+  color: hsl(235, 24%, 19%);
+  background-color: hsl(0, 0%, 98%);
+}
+#light .task-container {
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.15);
+}
+#light .task-container .task-holder {
+  border-bottom: 0.5px solid hsl(233, 11%, 84%);
+}
+#light .task-container .task-holder .task-check p {
+  color: hsl(235, 24%, 19%);
+}
+#light .items-left .task-filter-desktop button:hover {
+  color: hsl(235, 21%, 11%);
+}
+#light .task-filter button:hover {
+  color: hsl(235, 21%, 11%);
+}
+
+.todo-wrapper {
+  color: hsl(234, 39%, 85%);
+  width: 100%;
+  min-height: 100vh;
+}
+.todo-wrapper .top-wrapper {
+  background: url(./src/assets/images/bg-mobile-dark.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 4rem 2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.todo-wrapper .top-wrapper .toggle-wrapper {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.todo-wrapper .top-wrapper .toggle-wrapper button {
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.todo-wrapper .top-wrapper .toggle-wrapper h1 {
+  font-weight: 400;
+  letter-spacing: 0.7rem;
+}
+.todo-wrapper .top-wrapper .toggle-wrapper .toggle-theme {
+  display: flex;
+}
+.todo-wrapper .top-wrapper .toggle-wrapper .toggle-theme #light-mode {
+  display: none;
+}
+.todo-wrapper .top-wrapper .input-wrapper {
+  width: 100%;
+}
+.todo-wrapper .top-wrapper .input-wrapper .checkbox {
+  background: none;
+  position: relative;
+  top: -2rem;
+  left: 1rem;
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid hsl(236, 9%, 61%);
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.todo-wrapper .top-wrapper .input-wrapper input {
+  color: hsl(234, 11%, 52%);
+  border: none;
+  background-color: hsl(235, 24%, 19%);
+  width: 100%;
+  border-radius: 0.8rem;
+  font-size: 1rem;
+  padding: 1rem 2.8rem;
+  outline: none;
+  cursor: pointer;
+}
+.todo-wrapper .task-wrapper {
+  height: -moz-max-content;
+  height: max-content;
+  margin-top: -3.5rem;
+  padding: 0rem 2rem;
+}
+.todo-wrapper .task-wrapper .task-container {
+  background-color: hsl(235, 24%, 19%);
+  border-radius: 0.5rem;
+}
+.todo-wrapper .task-wrapper .task-container .else {
+  font-size: 0.8rem;
+  text-align: center;
+  color: hsl(234, 11%, 52%);
+  padding: 1rem;
+}
+.todo-wrapper .task-wrapper .task-container .task-holder {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  border-bottom: 0.5px solid hsl(237, 14%, 26%);
+  padding: 1.25rem;
+}
+.todo-wrapper .task-wrapper .task-container .task-holder .task-check {
+  display: flex;
+  gap: 1rem;
+}
+.todo-wrapper .task-wrapper .task-container .task-holder .delete-wrapper button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.todo-wrapper .task-wrapper .task-container .task-holder p {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: hsl(236, 9%, 61%);
+}
+.todo-wrapper .task-wrapper .task-container .task-holder .checkbox {
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 0.5px solid hsl(233, 14%, 35%);
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.todo-wrapper .task-wrapper .task-container :last-child {
+  border-bottom: none;
+}
+.todo-wrapper .task-wrapper .items-left {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.25rem;
+}
+.todo-wrapper .task-wrapper .items-left span {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: hsl(234, 11%, 52%);
+}
+.todo-wrapper .task-wrapper .items-left .clear {
+  cursor: pointer;
+}
+.todo-wrapper .task-wrapper .items-left .task-filter-desktop {
+  display: none;
+  gap: 1rem;
+  margin-left: 2rem;
+}
+.todo-wrapper .task-wrapper .items-left .task-filter-desktop button {
+  cursor: pointer;
+  color: hsl(234, 11%, 52%);
+  background: none;
+  outline: none;
+  border: none;
+}
+.todo-wrapper .task-wrapper .items-left .task-filter-desktop button:hover {
+  color: hsl(236, 33%, 92%);
+}
+.todo-wrapper .task-wrapper .task-filter {
+  background-color: hsl(235, 24%, 19%);
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  border-radius: 0.45rem;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+.todo-wrapper .task-wrapper .task-filter button {
+  cursor: pointer;
+  color: hsl(234, 11%, 52%);
+  background: none;
+  outline: none;
+  border: none;
+}
+.todo-wrapper .task-wrapper .task-filter button:hover {
+  color: hsl(236, 33%, 92%);
+}
+.todo-wrapper .hint {
+  color: hsl(234, 11%, 52%);
+  margin-top: 2rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .todo-wrapper .top-wrapper {
+    padding: 4rem;
+  }
+  .todo-wrapper .task-wrapper {
+    padding: 0rem 4rem;
+  }
+  .todo-wrapper .task-wrapper .task-container {
+    background-color: hsl(235, 24%, 19%);
+    border-radius: 0.5rem;
+  }
+  .todo-wrapper .task-wrapper .items-left {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.25rem;
+  }
+  .todo-wrapper .task-wrapper .items-left span {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: hsl(234, 11%, 52%);
+  }
+  .todo-wrapper .task-wrapper .items-left .clear {
+    cursor: pointer;
+  }
+  .todo-wrapper .task-wrapper .items-left .task-filter-desktop {
+    display: flex;
+  }
+  .todo-wrapper .task-wrapper .task-filter {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #light .top-wrapper {
+    background: url(./src/assets/images/bg-desktop-light.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .todo-wrapper .top-wrapper {
+    background: url(./src/assets/images/bg-desktop-dark.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    padding: 4rem;
+  }
+  .todo-wrapper .top-wrapper .toggle-wrapper {
+    width: 40rem;
+  }
+  .todo-wrapper .top-wrapper .input-wrapper {
+    width: 40rem;
+  }
+  .todo-wrapper .task-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .todo-wrapper .task-wrapper .task-container {
+    width: 40rem;
+  }
+  .todo-wrapper .task-wrapper .items-left .task-filter-desktop {
+    display: flex;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: hsl(235, 21%, 11%);
+}
+
+#light body {
+  background-color: yellow;
+}/*# sourceMappingURL=index.css.map */
