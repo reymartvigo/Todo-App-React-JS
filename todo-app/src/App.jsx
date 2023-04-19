@@ -2,10 +2,8 @@
 import React, { useState, useEffect } from 'react';
 import { createContext } from 'react';
 
-
-export const ThemeContext = createContext('dark')
-
 // Assets //
+import './styles/index.css'
 import './assets/images/favicon-32x32.png';
 import sun from './assets/images/icon-sun.svg'
 import moon from './assets/images/icon-moon.svg'
@@ -14,6 +12,10 @@ import check from './assets/images/icon-check.svg';
 
 
 // Assets //
+
+
+export const ThemeContext = createContext('dark')
+
 
 //Components //
 
@@ -65,6 +67,7 @@ const App = () => {
     const list = todoList
     list.splice(index, 1)
     setState({ todo: '', todoList: list, showAll: true });
+    localStorage.setItem('todoList', JSON.stringify(list))
   }
 
   const handleCrossOut = (index) => {

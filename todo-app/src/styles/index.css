@@ -6,7 +6,7 @@
   background-color: hsl(0, 0%, 98%);
 }
 #light .top-wrapper {
-  background: url(./src/assets/images/bg-mobile-light.jpg);
+  background: url(../src/assets/images/bg-mobile-light.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -47,7 +47,7 @@
   min-height: 100vh;
 }
 .todo-wrapper .top-wrapper {
-  background: url(./src/assets/images/bg-mobile-dark.jpg);
+  background: url(../assets/images/bg-mobile-dark.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 4rem 2rem;
@@ -239,12 +239,12 @@
 }
 @media screen and (min-width: 1024px) {
   #light .top-wrapper {
-    background: url(./src/assets/images/bg-desktop-light.jpg);
+    background: url(../assets/images/bg-desktop-light.jpg);
     background-repeat: no-repeat;
     background-size: cover;
   }
   .todo-wrapper .top-wrapper {
-    background: url(./src/assets/images/bg-desktop-dark.jpg);
+    background: url(../assets/images/bg-desktop-dark.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     align-items: center;
